@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar First Time</title>
+    <!-- Nampilin Title Di New Tab -->
+</head>
+<!-- <style>
+    *{
+        padding: 0%;
+        /* padding = untuk menambahkan jarak garis dalam */
+        margin: 0%;
+        /* margin = menambahkan jarak garis luar frame */
+        overflow: hidden;
+        /* overflow: hidden = untuk ga bisa di scroll default nya x dan y no scroll (lebih sering di pake di login)*/
+        /* hidden = kunci  */
+
+        /* overflow-y = jika di hidden maka yang bisa di scroll adalah garis x nya atau vertikal atau kanan kiri*/
+        /* overflow-x = jika di hidden maka yang bisa di scroll adalah garis y nya atau horizontal atau atas bawah */
+    }
+</style> -->
+<body>
+    <!-- dalam body hanya untuk nampilin element -->
+    <p class="text">Hello World</p>
+
+    <!-- <p class="text">Hello World</p> = ELEMENT -->
+
+    <!-- <p> = TAG PEMBUKA -->
+    <!-- p = TAG -->
+    class = Atribut
+    <!-- text = Value Atribut -->
+    <!-- Hello World = Value TAG -->
+    <!-- </p> = TAG PENUTUP -->
+
+
+    <!-- SYARAT : 
+    - Squen = Berurutan
+    - Gaboleh Capital(Value)
+    - No Recommend Snake Case / Camel Case but kita bisa pake Kebab Case -->
+
+    <!-- SHORTCUT : 
+    - Multiple Cursor Ganti Kata Yang Sama Sekaligus(1 File) = CMD + D 
+    - Copy Paste 1 Baris = CMD + C + V  -->
+
+    <!-- atribut Global -->
+    <p class="text-center">Hello World</p>
+    <p id="text-center">Hello World</p>
+    <!-- class, id = Membuat Class -->
+
+    <form action="" method="post">
+        <!-- action = action apa yang mau dia lakuin sama class ini  -->
+        <input type="text" placeholder="email">
+        <!-- type = type apa yang mau di masukin text, submit, dan yang lainnya -->
+        <!-- placeholder = untuk menaruh text di bagian input nya khusus input (hint text)-->
+        <input type="text" placeholder="password">
+        <button type="submit">Login</button>
+    </form>
+
+
+    <!-- atribut Event -->
+    <!-- <button onclick="test">Button Test</button> -->
+
+
+
+
+
+
+    <h1>INI TAG H1</h1>
+    <!-- h1, h2 , h3, h4, h5, h6 = Judul bisa di pake buat subjudul juga -->
+
+    <h2>INI TAG <span style="color: red; font-weight: bold;"> H2 </span></h2>
+    <!-- span = misahin mana yang mau khusus di edit di dalam tag dan lain lainnya -->
+
+    <h3>INI TAG H3</h3> <hr> 
+    <!-- hr = bikin baris baru dengan garis berwarna  -->
+
+    <h4>INI TAG H4</h4> <br>
+    <!-- br = bikin baris baru saja -->
+
+    <h5>INI TAG H5</h5>
+    <h6>INI TAG H6</h6>
+    <p>Hello World</p>
+
+
+    <div style="width: 100vw; height: 100vh; display: flex; flex-direction: column;"></div>
+    <!-- 100vw = full screen jika dia 50vw maka dia akan full screen sama kaya % aja -->
+    <!-- display: flex; = penataannya terhadap si object = default row -->
+    <!-- flex-direction = milih mau menurun atau menyamping ataupun di belakang
+    row = menyamping
+    column = menurun
+    row-reverse = bikin object nya menjadi ke belakang -->
+
+    <img src="https://www.radarbandung.id/wp-content/uploads/2021/09/logo-kota-bandung.jpg" alt="Gambar Bandung">
+    <img src="/img/Bandung.png" alt="Gambar Bandung" style="border-radius: 10px; border: 10px solid blue; box-shadow: black 10px 30px 20px;">
+    <!-- src = source nya dia dari mana
+    src online = ambil gambar dengan online, so kalo kita gada internet kita ga bisa ngambil gambar dari internet
+    src offline = amnil gambar secara offline
+    alt = alternatife jika gambar tidak ngeload maka nampilin yang di isi di alt"" -->
+    <!-- border = membuat garis/border pada tepi akhir object -->
+    <!-- border-radius = membuat garis melengkung -->
+    <!-- box-shadow = membuat bayangan pada sebuah object 
+    urutan 1 : 10px = garis bawah
+    urutan 2 : 30px = garis samping
+    urutan 3 : 20px = blur -->
+    
+    <div class="background" style="background-image: url(/img/Bandung.png); opacity: 0.3; width: 100vw; height: 100vh;"> 
+        <!-- opacity = memberikan transparansi pada object default nya 1
+        1 = 100%
+        0.9 = 90% -->
+    <p>test</p>
+    </div>
+
+
+
+
+
+
+    <!-- Tag list di html 
+    list ada 3 jenis :
+    - UL (unordered list)
+    - OL (ordered list)
+    - DL (Descriptional List) -->
+
+
+    <!-- CONTOH OL  -->
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan Circle Full</p>
+    <ul>
+        <li>Altaf</li>
+        <!-- li = list mana aja yang mau di masukin -->
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan kotak</p>
+    <ul type="square">
+        <!-- type ini di isi untuk mengubah bentuk titik nya  -->
+        <!-- square = kotak full -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan circle no fill</p>
+    <ul type="circle">
+        <!-- type ini di isi untuk mengubah bentuk titik nya  -->
+        <!-- circle = beda dengan default soalnya yang ini cuman garis akhir saa yang nampak -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan tanpa lambang</p>
+    <ul type="none">
+        <!-- type ini di isi untuk mengubah bentuk titik nya  -->
+        <!-- none = tidak menghasilan / mengeluarkan apa apa -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan circle no fill/ default</p>
+    <ul type="disk">
+        <!-- type ini di isi untuk mengubah bentuk titik nya  -->
+        <!-- disk = sama dengan default jadi ga perlu di tulis type jika ingin type nya di ubah ke disk -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+    <h4>Nama Kelompok kelas 11 RPL A</h4>
+    <p>Poin dengan image</p>
+    <ul style="list-style-image: url();">
+        <!-- ga perlu pakai type jika ingin mengganti logo dengan gambar lewat online  tapi gunakan style-->
+        <!-- list-style-image = itu style untuk memanggil image -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ul>
+
+
+
+
+    <!-- CONTOH OL -->
+    <h4>Nama Kelompok dari kelas 11 RPL A : </h4>
+    <p>point dengan angka</p>
+    <ol>
+        <!-- default nya dengan urutan angka -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ol>
+
+    <h4>Nama Kelompok dari kelas 11 RPL A : </h4>
+    <p>point dengan huruf kapital</p>
+    <ol type="A">
+        <!-- type sama kegunaan nya untuk memnetukan mau di bikin apa type nya -->
+        <!-- A = ngurutin dengan Huruf Kapital -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ol>
+
+    <h4>Nama Kelompok dari kelas 11 RPL A : </h4>
+    <p>point dengan huruf kecil</p>
+    <ol type="a">
+        <!-- type sama kegunaan nya untuk memnetukan mau di bikin apa type nya -->
+        <!-- a = ngurutin dengan Huruf kecil -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ol>
+
+    <h4>Nama Kelompok dari kelas 11 RPL A : </h4>
+    <p>point dengan romawi</p>
+    <ol type="I">
+        <!-- type sama kegunaan nya untuk memnetukan mau di bikin apa type nya -->
+        <!-- I = ngurutin dengan Angka Romawi Kapital -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ol>
+
+    <h4>Nama Kelompok dari kelas 11 RPL A : </h4>
+    <p>point dengan romawi</p>
+    <ol type="i">
+        <!-- type sama kegunaan nya untuk memnetukan mau di bikin apa type nya -->
+        <!-- i = ngurutin dengan Angka Romawi -->
+        <li>Altaf</li>
+        <li>Dayeuh</li>
+        <li>Galang</li>
+        <li>Vian</li>
+    </ol>
+
+
+
+    
+    <!-- Desription List -->
+
+    <!-- 
+        dl = Desriptional List
+        dt = Desriptional Term
+        dd = Descriptional Desc
+     -->
+
+
+
+
+    <!-- CONTOH DL -->
+    <h4>Tentang Siswa 11 RPL A</h4>
+    <dl>
+        <dt>Altaf</dt>
+        <!-- dt = ini dt -->
+        <dd>Altaf berasal dari kalimantan</dd>
+        <!-- dd = ini dd nya -->
+
+        <dt>Toriq</dt>
+        <dd>Toriq berasal dari Sawangan</dd>
+    </dl>
+
+
+
+
+
+
+
+    
+    <!-- 
+        Tag Table
+        1. table
+        2. thead = bagian column pertama mencakup keseluruhan shaf pertama
+        3. tbody
+        4. tfoot
+        5. tr = table room
+        6. th = bagian column dari thead
+        7. td = table data
+     -->
+
+     <!-- Example Table  -->
+     <table border="10" cellpadding="10">
+        <!-- border = untuk nampilin border atau bingkai nya  -->
+        <!-- 10 = ukuran pada border -->
+        cellpadding = untuk ngasih jarak atas bawah
+        <thead>
+            <!-- NO tr -->
+            <th>No</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+
+            <!-- W/tr -->
+            <!-- <tr>
+                <th>No</th>
+            </tr>
+            <tr>
+                <th>Nama</th>
+            </tr>
+            <tr>
+                <th>Kelas</th>
+            </tr> -->
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vian</td>
+                <td>XI RPL</td>
+            </tr> 
+            <tr>
+                <td>2</td>
+                <td>Alan</td>
+                <td>XI RPL</td>
+            </tr> 
+        </tbody>
+     </table>
+
+     <table border="5" style="width: 30%; height: 500px;">
+        <!-- 
+                rowspan = baris digabung
+                colspan = kolom yang digabung
+             -->
+             <tbody>
+                <tr>
+                    <td colspan="2" bgcolor="red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td rowspan="3" bgcolor="yellow"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             </tbody>
+     </table>
+
+
+
+
+
+     <!-- FORM -->
+     <form action="index.html">
+        <!-- action = suatu tindakan -->
+        <fieldset>
+            <!-- fieldset = memberikan kotak untuk si legend potong -->
+            <legend style="text-align: center;">Register Form</legend>
+
+            <p>
+                <label>Name</label>
+                <input type="text" name="name" required>
+                <!-- required berguna untuk menampilkan pop up -->
+            </p>
+
+            <p>
+                <label>Username</label>
+                <input type="text" name="name" required>
+            </p>
+
+            <p>
+                <label>Email</label>
+                <input type="email" name="name" required>
+            </p>
+
+            <p>
+                <label>Telephone</label>
+                <input type="number" name="name" required>
+            </p>
+
+            <p>
+                <label>Jenis Kelamin</label>
+                <select name="jenis_kelamin">
+                    <option value="">Pilih Jelis Kelamin</option>
+                    <!-- value = format yang di kirim ke database -->
+                    <option value="laki_laki">Laki Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Password</label>
+                <input type="password" name="password" id="">
+            </p>
+
+            <p>
+                <button type="submit">Register</button>
+            </p>
+            
+        </fieldset>
+     </form>
+
+
+</body>
+</html>
